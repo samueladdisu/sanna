@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanaa Menu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="assets/logo-t.png" type="image/png" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/reservation.css" />
+    <link rel="stylesheet" href="css/team.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <section class="menu-section" id="menu">
+      <div class="menu-header">
+        <div class="navbar">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#about">Our History</a>
+          <a href="index.html#team">Our Team</a>
+          <a href="#menu" class="active">Menu</a>
+          <a href="index.html#reservation">Reserve</a>
+        </div>
+        <div class="mob-nav">
+          <span id="open" class="fa-solid fa-bars"></span>
+        </div>
+        <div class="mob-nav-menu hide">
+          <span id="close" class="fa-solid fa-times"></span>
+          <a href="index.html#home">Home</a>
+          <a href="index.html#about">Our History</a>
+          <a href="index.html#team">Our Team</a>
+          <a href="#menu" class="active">Menu</a>
+          <a href="index.html#reservation">Reserve</a>
+        </div>
+
+        <p class="title">Our Cuisine</p>
+        <div class="options">
+          <div id="bf" class="select selected">Breakfast</div>
+          <div id="ld" class="select">Lunch & Dinner</div>
+          <div id="jc" class="select">Juice</div>
+          <div id="hd" class="select">Milkshakes</div>
+        </div>
+      </div>
+      <div class="menu-pic">
+        <div id="bf-menu" class="menu" style="display: flex"></div>
+        <div id="ld-menu" class="menu" style="display: none"></div>
+        <div id="jc-menu" class="menu" style="display: none"></div>
+        <div id="hd-menu" class="menu" style="display: none"></div>
+      </div>
+      <div class="container">
+        <center></center>
+
+        <div class="row">
+          <div class="table-responsive col-md-5 col-12">
+            <table class="table caption-top">
+              <caption>
+                Lunch and Dinner
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Price (ETB)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Special Sanna</td>
+                  <td>550</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Half Special Sanna</td>
+                  <td>460</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Mendi</td>
+                  <td>430</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td> Half Mendi</td>
+                  <td>390 </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Mofo with Rice </td>
+                  <td>550 </td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Mofo without Rice</td>
+                  <td>450 </td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Mugemer</td>
+                  <td>470</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Kibeb Sanaa</td>
+                  <td>370</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td> Tibs</td>
+                  <td>300 </td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Tibs with Rice</td>
+                  <td>420 </td>
+                </tr>
+                <tr>
+                  <th scope="row">11</th>
+                  <td>Gamberi Burma</td>
+                  <td>350 </td>
+                </tr>
+                <tr>
+                  <th scope="row">12</th>
+                  <td>Burma Ugule</td>
+                  <td>350 </td>
+                </tr>
+                <tr>
+                  <th scope="row">13</th>
+                  <td>Salad</td>
+                  <td>280</td>
+                </tr>
+                <tr>
+                  <th scope="row">14</th>
+                  <td>Fasha</td>
+                  <td>300 </td>
+                </tr>
+                <tr>
+                  <th scope="row">15</th>
+                  <td>Akda with Meat</td>
+                  <td>300 </td>
+                </tr>
+                <tr>
+                  <th scope="row">16</th>
+                  <td>Akda with Chicken</td>
+                  <td>300 </td>
+                </tr>
+                <tr>
+                  <th scope="row">17</th>
+                  <td>Akda Adeni</td>
+                  <td>300 </td>
+                </tr>
+                <tr>
+                  <th scope="row">18</th>
+                  <td>Fasha Ugule</td>
+                  <td>300</td>
+                </tr>
+                <tr>
+                  <th scope="row">19</th>
+                  <td>Metbi with Rice</td>
+                  <td>550 </td>
+                </tr>
+                <tr>
+                  <th scope="row">20</th>
+                  <td>Metbi without Rice</td>
+                  <td>450 </td>
+                </tr>
+                <tr>
+                  <th scope="row">21</th>
+                  <td>Feta Merek</td>
+                  <td>180 </td>
+                </tr>
+                <tr>
+                  <th scope="row">22</th>
+                  <td>Feta with Honey & Banana</td>
+                  <td>180 </td>
+                </tr>
+                <tr>
+                  <th scope="row">23</th>
+                  <td>Feta Temer</td>
+                  <td>200 </td>
+                </tr>
+                <tr>
+                  <th scope="row">24</th>
+                  <td>Mugamer with Rice</td>
+                  <td>600 </td>
+                </tr>
+                <tr>
+                  <th scope="row">25</th>
+                  <td>Kita (Chappati)</td>
+                  <td>30 </td>
+                </tr>
+                <tr>
+                  <th scope="row">26</th>
+                  <td>Reshush</td>
+                  <td>60</td>
+                </tr>
+                <tr>
+                  <th scope="row">27</th>
+                  <td>Rice</td>
+                  <td>150 </td>
+                </tr>
+                <tr>
+                  <th scope="row">28</th>
+                  <td>Mushekel</td>
+                  <td>170 </td>
+                </tr>
+                <tr>
+                  <th scope="row">29</th>
+                  <td>Deka</td>
+                  <td>300 </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">30</th>
+                  <td>Greal Tibs</td>
+                  <td>300 </td>
+                </tr>
+                <tr>
+                  <th scope="row">31</th>
+                  <td>chickem with Rice</td>
+                  <td>600  </td>
+                </tr>
+                <tr>
+                  <th scope="row">32</th>
+                  <td>Half Chicken with Rice</td>
+                  <td>350 </td>
+                </tr>
+                <tr>
+                  <th scope="row">33</th>
+                  <td>One Chicken without Rice</td>
+                  <td>500 </td>
+                </tr>
+                <tr>
+                  <th scope="row">34</th>
+                  <td>Half Chicken without Rice</td>
+                  <td>280</td>
+                </tr>
+                <tr>
+                  <th scope="row">35</th>
+                  <td>Chicken Medkut</td>
+                  <td>600</td>
+                </tr>
+                <tr>
+                  <th scope="row">36</th>
+                  <td>One chicken Greal with Rice</td>
+                  <td>600</td>
+                </tr>
+                <tr>
+                  <th scope="row">37</th>
+                  <td>Fish with Rice</td>
+                  <td>500 </td>
+                </tr>
+                <tr>
+                  <th scope="row">38</th>
+                  <td>Fish without Rice</td>
+                  <td>400 </td>
+                </tr>
+                <tr>
+                  <th scope="row">39</th>
+                  <td>One Sheep with Rice</td>
+                  <td>5300 </td>
+                </tr>
+                <tr>
+                  <th scope="row">40</th>
+                  <td>Half sheep with Rice</td>
+                  <td>2700 </td>
+                </tr>
+                <tr>
+                  <th scope="row">41</th>
+                  <td>One Sheep without Rice</td>
+                  <td>3800 </td>
+                </tr>
+                <tr>
+                  <th scope="row">42</th>
+                  <td>Half Sheep without Rice</td>
+                  <td>2000 </td>
+                </tr>
+                <tr>
+                  <th scope="row">43</th>
+                  <td>Tuna with Rice </td>
+                  <td>300 </td>
+                </tr>
+                <tr>
+                  <th scope="row">44</th>
+                  <td>Key wet Zegni</td>
+                  <td>250 </td>
+                </tr>
+                <tr>
+                  <th scope="row">45</th>
+                  <td>Alecha wet Zegni</td>
+                  <td>250 </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">46</th>
+                  <td>Misto</td>
+                  <td>250 </td>
+                </tr>
+                <tr>
+                  <th scope="row">47</th>
+                  <td>Sanaa Misto</td>
+                  <td>250 </td>
+                </tr>
+                <tr>
+                  <th scope="row">48</th>
+                  <td>Showerma Full</td>
+                  <td>350 </td>
+                </tr>
+                <tr>
+                  <th scope="row">49</th>
+                  <td>Showerma Chicken & Meat Mix</td>
+                  <td>350 </td>
+                </tr>
+                <tr>
+                  <th scope="row">50</th>
+                  <td>Showerma Sandwich</td>
+                  <td>200 </td>
+                </tr>
+                <tr>
+                  <th scope="row">51</th>
+                  <td>Birost</td>
+                  <td>500 </td>
+                </tr>
+                <tr>
+                  <th scope="row">52</th>
+                  <td>Half Birost</td>
+                  <td>350 </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-responsive col-md-5 offset-md-1 col-12">
+            <table class="table caption-top">
+              <caption>
+              Breakfast
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Price (ETB)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Foul</td>
+                  <td>180</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Fossolia</td>
+                  <td>180</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Kibdah Khalawi</td>
+                  <td>200</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Fetira with Egg</td>
+                  <td>200</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Fetira with Honey</td>
+                  <td>200</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Fetira</td>
+                  <td>200 </td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Hummus</td>
+                  <td>200</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Special Ful</td>
+                  <td>200</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Retib</td>
+                  <td>150 </td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Egg</td>
+                  <td>180 </td>
+                </tr>
+                <tr>
+                  <th scope="row">11</th>
+                  <td>Tibs</td>
+                  <td>300 </td>
+                
+
+              </tbody>
+            </table>
+
+            <table class="table caption-top">
+              <caption>
+              Salad
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Price (ETB)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Arabian Salad</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Normal Salad</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Salad with Tuna</td>
+                  <td>170</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Salad with Tabouli</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Salad With Fatush</td>
+                  <td>120</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Baba Ghanoush</td>
+                  <td>170</td>
+                </tr>
+               
+              </tbody>
+            </table>
+
+            <table class="table caption-top">
+              <caption>
+              Juice
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Price (ETB)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mango</td>
+                  <td>120</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Papaya</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Pineapple</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Orange</td>
+                  <td>120</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Lime</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Avocado</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Guava</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Spries</td>
+                  <td>120</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Date palm with Milk</td>
+                  <td>120</td>
+                </tr>
+
+              </tbody>   <table class="table caption-top">
+                Hot drinks
+                 </caption>
+                 <thead>
+                   <tr>
+                     <th scope="col">#</th>
+                     <th scope="col">Name</th>
+                     <th scope="col">Price (ETB)</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <th scope="row">1</th>
+                     <td>One Tea with Milk</td>
+                     <td>120</td>
+                   </tr>
+                   <tr>
+                     <th scope="row">2</th>
+                     <td>Half Tea with Milk</td>
+                     <td>70</td>
+                   </tr>
+                   <tr>
+                     <th scope="row">3</th>
+                     <td>1 Glass Tea Milk</td>
+                     <td>35</td>
+                   </tr>
+                   <tr>
+                     <th scope="row">4</th>
+                     <td>Green Tea</td>
+                     <td>35</td>
+                   </tr>
+                
+                   <tr>
+                     <th scope="row">5</th>
+                     <td>Red Tea</td>
+                     <td>15</td>
+                   </tr>
+                   
+                  
+                 </tbody>
+               </table>
+            </table>
+
+            <table class="table caption-top">
+             milk Shake
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Price (ETB)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Milkshake Vanilla</td>
+                  <td>140</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Milkshake Strewberry</td>
+                  <td>140</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Milkshake Chocolate</td>
+                  <td>140</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Gumashi Yoghurt with Lemmon</td>
+                  <td>120</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Gumashi Yoghurt with Orange</td>
+                  <td>140</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Fruit Punch Normal</td>
+                  <td>140</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>fruit Punch Special</td>
+                  <td>170</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Sanaa Special Juice</td>
+                  <td>140</td>
+                </tr>
+               
+              </tbody>
+            </table>
+
+            
+            <table class="table caption-top">
+              Soft Drinks
+               </caption>
+               <thead>
+                 <tr>
+                   <th scope="col">#</th>
+                   <th scope="col">Name</th>
+                   <th scope="col">Price (ETB)</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">1</th>
+                   <td>Soda</td>
+                   <td>30</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">2</th>
+                   <td>Ambo water</td>
+                   <td>30</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">3</th>
+                   <td>Water 2Ltr</td>
+                   <td>25</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">4</th>
+                   <td>Water 500ml</td>
+                   <td>20</td>
+                 </tr>
+              
+                
+                 
+                
+               </tbody>
+             </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="find-us">
+        <span style="font-size: 20px">Find Us</span>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2292.94878798572!2d38.76708456395951!3d8.999181196743457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85b2823ddaed%3A0x4d43f77c32b229e3!2zU2FuYWEgcmVzdGF1cmFudCDZhdi32LnZhSDYtdmG2LnYp9ih!5e0!3m2!1sen!2set!4v1637072751578!5m2!1sen!2set"
+            height="250"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+      <div class="about-us-foot">
+        <span style="font-size: 20px">About Us</span>
+        <p style="font-size: 14px; opacity: 0.7">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+          quisquam reprehenderit, inventore reiciendis cupiditate ipsam quia
+          consectetur aliquam non dicta quidem accusamus aspernatur, molestiae
+          expedita necessitatibus dolores illum, nulla dolor.
+        </p>
+      </div>
+      <div class="contact-us">
+        <span style="font-size: 20px">Contact Us</span>
+        <div style="padding-top: 1rem; opacity: 0.7">
+          <li>+251-112345678</li>
+          <li>+251-112345678</li>
+          <li>+251-112345678</li>
+          <li>+251-112345678</li>
+        </div>
+      </div>
+      <div class="follow-us">
+        <span style="font-size: 20px">Follow Us</span>
+        <div class="social">
+          <a href="https://www.facebook.com/sanaarestaurantaddis/">
+            <span class="fa-brands fa-facebook-f"></span>
+          </a>
+          <a href="">
+            <span class="fa-brands fa-twitter"></span>
+          </a>
+          <a
+            href="https://www.instagram.com/explore/locations/1098370107005726/sanaa-restaurant/"
+          >
+            <span class="fa-brands fa-instagram"></span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="index.js"></script>
+</html>

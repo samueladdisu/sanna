@@ -1,0 +1,70 @@
+/* -----------------------FOOTER SECTION--------------------------- */
+
+footer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "find-us find-us about-us-foot contact-us follow-us";
+    background-color: var(--primary);
+    color: white;
+    min-height: 40vh;
+    scroll-snap-align: start;
+    padding: 2rem;
+}
+
+.find-us {
+    grid-area: find-us;
+}
+
+iframe {
+    border: 0;
+    margin-top: 1rem;
+    border-radius: 3px;
+    width: 90%;
+}
+
+.about-us-foot {
+    padding-right: 3rem;
+}
+
+footer .social {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 10rem 0 0;
+}
+
+footer .social a {
+    color: white;
+}
+
+.contact-us li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "find-us"
+        "contact-us"
+        "follow-us";
+        scroll-snap-align:unset;
+        padding: 2rem;
+        height: 100vh;
+    }
+    .about-us-foot {
+        display: none;
+    }
+    footer .social {
+        padding: 2rem 3rem;
+    }
+    .follow-us {
+        margin-top: 2rem;
+    }
+    .contact-us {
+        margin-top: 2rem;
+    }
+}

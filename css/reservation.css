@@ -1,0 +1,98 @@
+/* -----------------------RESERVATION SECTION--------------------------- */
+
+.res-section {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "res-header"
+    "res-call"
+    "res-time";
+    background: url('../assets/reserve\ pic.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: #000000af;
+}
+
+.res-section span {
+    color: white;
+    display: inline-block;
+}
+
+.res-section .phn-number {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    line-height: 4rem;
+    margin: 0;
+    color: white
+}
+
+.res-header {
+    grid-area: res-header;
+    text-align: center;
+    padding: 2rem;
+    z-index: 2;
+}
+    .res-header .title {
+        font-family: 'Abril Fatface', cursive;
+        font-size: 4rem;
+        letter-spacing: 1px;
+        line-height: 4rem;
+        margin: 0;
+        padding: 1rem;
+        color: white
+    }
+
+.res-call {
+    grid-area: res-call;
+    text-align: center;
+    z-index: 2;
+}
+    .res-call .phone-circle {
+        font-size: 3rem;
+        border: 2px solid white;
+        border-radius: 50%;
+        display: block;
+        width: fit-content;
+        padding: 1rem;
+        margin: 2rem auto;
+    }
+
+.res-time {
+    grid-area: res-time;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+    padding: 4rem 0;
+}
+
+@media screen and (max-width: 480px) {
+    .res-section {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "res-header"
+        "res-call"
+        "res-call"
+        "res-time";
+    }
+    .res-header .title {
+        font-size: 2rem;
+        line-height: 2rem;
+        margin: 0;
+        padding: 1rem;
+    }
+    .res-section .phn-number {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .res-time {
+        padding: 0rem 1rem;
+    }
+}

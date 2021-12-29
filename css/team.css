@@ -1,0 +1,100 @@
+/* -----------------------TEAM SECTION--------------------------- */
+
+.team-section {
+    grid-template-columns: repeat(6, 1fr);;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "team-text t-pic-1 t-pic-2 t-pic-3 t-pic-3 t-pic-3"
+    "team-text t-pic-4 t-pic-2 t-pic-3 t-pic-3 t-pic-3"
+    "team-text t-pic-4 t-pic-5 t-pic-3 t-pic-3 t-pic-3";
+}
+
+.team-header {
+    grid-area: team-header;
+    text-align: center;
+    padding: 2rem;
+}
+
+    .team-header span {
+        color: var(--primary);
+    }
+    .team-header .title {
+        font-family: 'Abril Fatface', cursive;
+        font-size: 4rem;
+        letter-spacing: 1px;
+        line-height: 4rem;
+        margin: 0;
+        padding: 1rem;
+    }
+
+.team-text {
+    grid-area: team-text;
+    position: relative;
+}
+.team-text p {
+    width: max-content;
+    position: absolute;
+    top: 45%;
+    left: -10%;
+    transform-origin: 0 0;
+    transform: rotate(270deg) translate(-40%, 90%);
+    font-family: 'Abril Fatface', cursive;
+    font-size: 4rem;
+    letter-spacing: 1px;
+}
+.t-pic-2 {
+    grid-area: t-pic-2;
+    background-image: url('../assets/staff\ pic\ 4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.t-pic-3 {
+    grid-area: t-pic-3;
+    background-image: url('../assets/staff\ pic\ 1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.t-pic-1 {
+    grid-area: t-pic-1;
+    background-image: url('../assets/staff\ pic\ 2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.t-pic-4 {
+    grid-area: t-pic-4;
+    background-image: url('../assets/staff\ pic\ 5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.t-pic-5 {
+    grid-area: t-pic-5;
+    background-image: url('../assets/staff\ pic\ 3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 480px) {
+    .team-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "team-text"
+        "t-pic-2"
+        "t-pic-2"
+        "t-pic-3"
+        "t-pic-3"
+        "t-pic-3";
+    }
+    .team-text p {
+        position: absolute;
+        transform-origin: 0 0;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        width: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+}
