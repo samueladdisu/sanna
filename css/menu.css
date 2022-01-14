@@ -159,7 +159,7 @@
 }
 .food-1 {
     grid-area: food-1;
-    background-image: url('../assets/food\ pic\ 3.jpg');
+    background-image: url('../assets/Lunch Dinner/chickenRice.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -167,7 +167,7 @@
 }
 .food-2 {
     grid-area: food-2;
-    background-image: url('../assets/food\ pic\ 1.jpg');
+    background-image: url('../assets/Lunch Dinner/mendi.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -175,7 +175,7 @@
 }
 .food-3 {
     grid-area: food-3;
-    background-image: url('../assets/food\ pic\ 2.jpg');
+    background-image: url('../assets/Lunch Dinner/Tibs.jfif');
     background-size: cover;
     background-position: center;
     position: relative;

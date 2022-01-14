@@ -8,39 +8,32 @@ var menu = {
     breakfast:[
         {
             name:"Egg Firfir",
-            price:300,
             img:"./assets/Breakfast/eggfirfir.jpg"
         },
         {
             name:"Fetira with eggs",
-            price:200,
             img:"./assets/Breakfast/fetiraEgg.jfif"
         },
         {
             name:"Special Full",
-            price:200,
             img:"./assets/Breakfast/specialFull.jfif"
         }
     ],
     lunchDinner:[
         {
             name:"Chiken with Rice",
-            price:600,
             img:"./assets/Lunch Dinner/chickenRice.jpg"
         },
         {
             name:"Fahsa",
-            price:300,
             img:"./assets/Lunch Dinner/fahsa.jpg"
         },
         {
             name:"Mendi",
-            price:430,
             img:"./assets/Lunch Dinner/mendi.jpg"
         },
         {
             name:"Tibs",
-            price:300,
             img:"./assets/Lunch Dinner/Tibs.jfif"
         }
         
@@ -48,34 +41,28 @@ var menu = {
     juice:[
         {
             name:"Papaya Juice",
-            price:100,
             img:"./assets/Juice/papaya.jfif"
         },
         {
             name:"Mango Juice",
-            price:120,
             img:"./assets/Juice/mango.jpg"
         },
         {
             name:"Orange Juice",
-            price:120,
             img:"./assets/Juice/orange.jfif"
         },
         {
             name:"Pineapple Juice",
-            price:100,
             img:"./assets/Juice/Pineapple Juice.jfif"
         }
     ],
     milkshakes:[
         {
             name:"Sanaa Special",
-            price:35,
             img:"./assets/Juice/Special Milkshake.jpg"
         },
         {
             name:"Vanilla Milkshake ",
-            price:20,
             img:"./assets/Juice/Vanilla Milkshake.jfif"
         },
     ]
@@ -122,19 +109,19 @@ $(".select").click(function () {
 function populate () {
     $.each( menu.breakfast, function( key,val ) {
         // Add to bf-menu
-        $("#bf-menu").append('<div class="menu-item"><img src="'+ val.img +'" alt="" srcset=""><p class="name">'+ val.name +'</p><p class="price">Br '+ val.price +'</p></div>')
+        $("#bf-menu").append('<div class="menu-item"><img src="'+ val.img +'" alt="" srcset=""><p class="name">'+ val.name +'</p></div>')
     });
     $.each( menu.lunchDinner, function( key,val ) {
         // Add to bf-menu
-        $("#ld-menu").append('<div class="menu-item"><img src="'+ val.img +'" alt="" srcset=""><p class="name">'+ val.name +'</p><p class="price">Br '+ val.price +'</p></div>')
+        $("#ld-menu").append('<div class="menu-item"><img src="'+ val.img +'" alt="" srcset=""><p class="name">'+ val.name +'</p></div>')
     });
     $.each( menu.juice, function( key,val ) {
         // Add to bf-menu
-        $("#jc-menu").append('<div class="menu-item"><img src="'+ val.img +'" alt="" srcset=""><p class="name">'+ val.name +'</p><p class="price">Br '+ val.price +'</p></div>')
+        $("#jc-menu").append('<div class="menu-item"><img src="'+ val.img +'" alt="" srcset=""><p class="name">'+ val.name +'</p></div>')
     });
     $.each( menu.milkshakes, function( key,val ) {
         // Add to bf-menu
-        $("#hd-menu").append('<div class="menu-item"><img src="'+ val.img +'" alt="" srcset=""><p class="name">'+ val.name +'</p><p class="price">Br '+ val.price +'</p></div>')
+        $("#hd-menu").append('<div class="menu-item"><img src="'+ val.img +'" alt="" srcset=""><p class="name">'+ val.name +'</p></div>')
     }); 
 }
 
